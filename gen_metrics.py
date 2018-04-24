@@ -6,8 +6,8 @@ client = MongoClient('mongodb://172.17.0.2:27017')
 db=client.admin
 # Issue the serverStatus command and print the results
 serverStatusResult=db.command("serverStatus")
-#print "Printing Server Status"
-#pprint(serverStatusResult)
+print "Printing Server Status"
+pprint(serverStatusResult)
 
 #do a lot of bulk inserts
 
